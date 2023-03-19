@@ -16,7 +16,7 @@ SO THAT I can create a strong password that provides greater security
 Wes Simcox
 
 ### Screenshot:
-! [Screenshot](https://github.com/WesSimcox/Challenge-3-Password-Generator/blob/main/screenshot.png)
+![Screenshot](https://github.com/WesSimcox/Challenge-3-Password-Generator/blob/main/screenshot.png)
 
 
 ### References:
