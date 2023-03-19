@@ -7,9 +7,10 @@ var symbolSet= ["!","@","#","$","%","^","&","*","(",")"]
 
 function generatePassword() {
   var passwordLength = parseInt( prompt("Enter desired length"));
-  if(passwordLength < 8 || passwordLength > 128 && isNaN(passwordLength)){ // && AND || or ! NOT
+  if(passwordLength < 8 || passwordLength > 128 && isNaN(passwordLength)){
     return "Please enter valid password length"
   }
+
   var yesUpper = confirm("Do you like to have Upper case alphabets? ")
   var yesLower = confirm("Do you want to include lowercase letters?")
   var yesNumber = confirm ("Do you want to include numbers?")
@@ -31,9 +32,10 @@ function generatePassword() {
   if(validChoices.length === 0){
     return "Please choose at least one option before generating password."
   }
+
   var password = ""
-  for(var i = 0; i < passwordLength ; i++){ // Iterator starting length; termination condition ; i = i +1 incremental value
-     var index =  Math.floor(Math.random() * validChoices.length) // 0 to 1 - 0.2 0.25 0. 75
+  for(var i = 0; i < passwordLength ; i++){
+     var index =  Math.floor(Math.random() * validChoices.length) 
     password += validChoices[index]
   }
   return password
