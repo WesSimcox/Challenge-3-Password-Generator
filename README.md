@@ -9,7 +9,7 @@
 **Password Generation Logic**:The password generation logic uses the Math.random funciton and pulls from the validChoices you randomly choose characters from the specified data sets chosen.
 
 ## Deployment:
-[Live]()
+[Live](https://wessimcox.github.io/Challenge-3-Password-Generator/)
 
 ## User Story:
 
