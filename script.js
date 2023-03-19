@@ -28,6 +28,9 @@ function generatePassword() {
     validChoices = validChoices.concat(symbolSet)
   }
   console.log(validChoices)
+  if(validChoices.length === 0){
+    return "Please choose at least one option before generating password."
+  }
   var password = ""
   for(var i = 0; i < passwordLength ; i++){ // Iterator starting length; termination condition ; i = i +1 incremental value
      var index =  Math.floor(Math.random() * validChoices.length) // 0 to 1 - 0.2 0.25 0. 75
